@@ -2,5 +2,9 @@
 Hello People!!
 I have successfully completed the DOCKER training. Here I'm with a project in which in just one click You can create an infrastructure for:
 
-1. WORDPRESS Framework and MYSQL Database
-2. NEXTCLOUD and MYSQL Database
+# NEXTCLOUD and MYSQL Database
+I have uploaded the code as well as the screenshot of that project
+
+
+I have also uploaded for:
+# WORDPRESS Framework and MYSQL Database
