@@ -1,0 +1,30 @@
+#this is for Owncloud
+
+version: '3'
+
+services:
+  dbos:
+    image: mysql:5.7
+    volumes:
+      - mysql_storage_3:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 0301
+      MYSQL_USER: sahil
+      MYSQL_PASSWORD: 0301
+      MYSQL_DATABASE: mydb
+
+
+  owncloud:
+    image: owncloud:lastes
+    restart: always
+    depends_on:
+      - dbos
+    ports:
+      - 8083:80
+    volumes:
+      - oc_storage /var/www/html
+
+volumes:
+  oc_storage:
+  mysql_storage_3:
